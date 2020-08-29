@@ -11,6 +11,9 @@ ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
+# Expose port 4000 for Jekyll
+EXPOSE 4000/tcp
+
 # Configure apt and install packages
 RUN apt-get update \
  && apt-get -y install --no-install-recommends apt-utils dialog 2>&1 \
