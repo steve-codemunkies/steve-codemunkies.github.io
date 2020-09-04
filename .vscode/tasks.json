@@ -4,8 +4,14 @@
         {
             "label": "Start jekyll for codemunki.es",
             "command": "jekyll",
-            "args": [ "serve", "-w", "-D", "--future" ],
-            "type": "shell"
+            "args": [
+                "serve",
+                "-w",
+                "-D",
+                "--future"
+            ],
+            "type": "shell",
+            "problemMatcher": []
         }
     ]
 }
