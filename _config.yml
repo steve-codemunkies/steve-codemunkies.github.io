@@ -20,3 +20,5 @@ include:
 exclude:
   - .devcontainer
   - .vscode
+  - node_modules
+  - dev-awesome-tools

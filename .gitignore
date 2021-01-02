@@ -4,3 +4,25 @@ _drafts
 .jekyll-cache
 
 **/*.Identifier
+
+dev-awesome-tool/node_modules/
+dev-awesome-tool/build/
+dev-awesome-tool/.pnp
+.pnp.js
+
+# testing
+dev-awesome-tool/coverage
+
+# production
+dev-awesome-tool/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
