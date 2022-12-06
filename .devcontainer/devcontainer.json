@@ -24,6 +24,11 @@
 		"terminal.integrated.defaultProfile.linux": "bash"
 	},
 
+	// Add aws cli as a feature
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": { }
+	},
+
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"rebornix.Ruby",
