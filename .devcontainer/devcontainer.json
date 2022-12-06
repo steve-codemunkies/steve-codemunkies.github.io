@@ -29,6 +29,12 @@
 		"ghcr.io/devcontainers/features/aws-cli:1": { }
 	},
 
+	// Mount the local aws directory to reuse pre-configured credentials
+	// See https://cloudbytes.dev/snippets/mount-aws-credentials-on-vscode-devcontainers
+	"mounts": [
+        "source=${localEnv:HOME}/.aws,target=/home/vscode/.aws,type=bind,consistency=cached"
+    ],
+
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"rebornix.Ruby",
