@@ -44,4 +44,4 @@ jobs:
         run: cd cdk && npm install
 
       - name: deploy it all! 🙈
-        run: cd cdk && npm run cdk deploy add 
+        run: cd cdk && npm run cdk deploy
