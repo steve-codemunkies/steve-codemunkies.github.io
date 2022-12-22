@@ -4,8 +4,7 @@ run-name: Build and deploy beta.codemunki.es ${{ github.actor }}
 on:
   push:
     branches:
-      # - 'main'
-      - 'aws/static'
+      - 'main'
   
   # Allow this workflow to run from the Actions tab
   workflow_dispatch:
