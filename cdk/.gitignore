@@ -8,4 +8,4 @@ node_modules
 cdk.out
 
 # Allow cloudfront distribution function to be picked up
-!/lib/cfd-fn/*.js
+!/cfd-fn/*.js
