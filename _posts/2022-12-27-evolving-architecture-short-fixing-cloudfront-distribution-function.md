@@ -12,13 +12,13 @@ tile-image: /assets/2019-01-07-elite-hacking-tile.jpg
 
 When I originally setup the infrastructure to serve my static site (for {% post_url 2022-12-22-evolving-architecture-publish-jekyll-aws-cdk-github-actions %}) I manually set things up in the AWS console.
 
-![Sue me, I'm an idiot 😉](./assets/2022-12-27-sue-me.gif)
+![Sue me, I'm an idiot 😉](/assets/2022-12-27-sue-me.gif)
 
 One thing I hadn't realised in doing this was that I setup the _bucket_ to return an `index.html` if a directory was requested, rather than a file. However I didn't replicate that into my CDK stack.
 
 And doing a bit of testing revealed this.
 
-![Doofus](./assets/2022-12-27-snigger.gif)
+![Doofus](/assets/2022-12-27-snigger.gif)
 
 Doing some quick reading I soon found [Cloudfront Functions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html) and the [sample to add `index.html` to request URLs that don't include a file name](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/example-function-add-index.html).
 
