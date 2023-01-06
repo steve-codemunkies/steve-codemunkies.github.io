@@ -43,5 +43,8 @@ jobs:
       - name: install node dependencies 🔨
         run: cd cdk && npm install
 
+      - name: build and test the cdk solution 🧪
+        run: cd cdk && npm run build && npm run test
+
       - name: deploy it all! 🙈
         run: cd cdk && npm run cdk deploy
