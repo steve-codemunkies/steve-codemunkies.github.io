@@ -43,74 +43,47 @@ const cffContext: AWSCloudFrontFunction.Context = {
     requestId: 'EXAMPLEntjQpEXAMPLE_SG5Z-EXAMPLEPmPfEXAMPLEu3EqEXAMPLE==',
 };
 
+function BuildEvent(uri: string) : AWSCloudFrontFunction.Event {
+    const cffRequest: AWSCloudFrontFunction.Request = {
+        method: 'GET',
+        uri: uri,
+        querystring: cffValue,
+        headers: cffValue,
+        cookies: cffValue
+    };
+
+    return {
+        version: '1.0',
+        context: cffContext,
+        viewer: cffViewer,
+        request: cffRequest,
+        response: cffResponse,
+    };
+}
+
 describe('testing the CloudFront Function', () => {
 
     test('when the uri ends in / then index.html should be appended', () => {
-        const cffRequest: AWSCloudFrontFunction.Request = {
-            method: 'GET',
-            uri: '/test/',
-            querystring: cffValue,
-            headers: cffValue,
-            cookies: cffValue
-        };
+        const event = BuildEvent('/test/');
+        const returnedRequest = handler(event);
 
-        const cffEvent: AWSCloudFrontFunction.Event = {
-            version: '1.0',
-            context: cffContext,
-            viewer: cffViewer,
-            request: cffRequest,
-            response: cffResponse,
-        };
-
-        const returnedRequest = handler(cffEvent);
-
-        expect(returnedRequest).toBe(cffRequest);
+        expect(returnedRequest).toBe(event.request);
         expect(returnedRequest.uri).toBe('/test/index.html');
     });
 
     test('when the uri does not contain . then  /index.html should be appended', () => {
-        const cffRequest: AWSCloudFrontFunction.Request = {
-            method: 'GET',
-            uri: '/test',
-            querystring: cffValue,
-            headers: cffValue,
-            cookies: cffValue
-        };
+        const event = BuildEvent('/test');
+        const returnedRequest = handler(event);
 
-        const cffEvent: AWSCloudFrontFunction.Event = {
-            version: '1.0',
-            context: cffContext,
-            viewer: cffViewer,
-            request: cffRequest,
-            response: cffResponse,
-        };
-
-        const returnedRequest = handler(cffEvent);
-
-        expect(returnedRequest).toBe(cffRequest);
+        expect(returnedRequest).toBe(event.request);
         expect(returnedRequest.uri).toBe('/test/index.html');
     });
 
     test('when the uri has a file extension it should be unaltered', () => {
-        const cffRequest: AWSCloudFrontFunction.Request = {
-            method: 'GET',
-            uri: '/test/file.png',
-            querystring: cffValue,
-            headers: cffValue,
-            cookies: cffValue
-        };
+        const event = BuildEvent('/test/file.png');
+        const returnedRequest = handler(event);
 
-        const cffEvent: AWSCloudFrontFunction.Event = {
-            version: '1.0',
-            context: cffContext,
-            viewer: cffViewer,
-            request: cffRequest,
-            response: cffResponse,
-        };
-
-        const returnedRequest = handler(cffEvent);
-
-        expect(returnedRequest).toBe(cffRequest);
+        expect(returnedRequest).toBe(event.request);
         expect(returnedRequest.uri).toBe('/test/file.png');
     });
 
