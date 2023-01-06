@@ -1,9 +1,7 @@
-// url-rewrite.js
-// See other AWS examples at https://github.com/aws-samples/amazon-cloudfront-functions/)
-
-function handler(event) {
-    var request = event.request;
-    var uri = request.uri;
+function handler (event: AWSCloudFrontFunction.Event): AWSCloudFrontFunction.Request
+{
+    const { request } = event;
+    const { uri } = request;
 
     // Check whether the URI is missing a file name.
     if (uri.endsWith('/')) {
@@ -13,6 +11,6 @@ function handler(event) {
     else if (!uri.includes('.')) {
         request.uri += '/index.html';
     }
-    
+
     return request;
 }
