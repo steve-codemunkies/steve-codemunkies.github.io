@@ -1,4 +1,4 @@
-import { handler } from '../../cfd-fn/url-rewrite';
+import handler from '../../cfd-fn/url-rewrite';
 
 const cffValue: AWSCloudFrontFunction.ValueObject = {
     key1: { value: 'text/plain' },
