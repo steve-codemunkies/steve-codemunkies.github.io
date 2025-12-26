@@ -538,6 +538,10 @@ body.theme-grid-brutalist .wrap.home p {
   font-family: 'Courier New', monospace;
 }
 
+body.theme-grid-brutalist .wrap.home a.post-link {
+  font-weight: bold;
+}
+
 body.theme-grid-brutalist .site-footer {
   background: white;
   border-top: 1px solid #333;
