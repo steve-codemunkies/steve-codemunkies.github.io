@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Brutalist: Raw, stark black and white -->
+  <rect width="200" height="200" fill="white" stroke="black" stroke-width="5"/>
+  
+  <!-- Brutalist grid -->
+  <rect x="40" y="40" width="60" height="60" fill="none" stroke="black" stroke-width="3"/>
+  <rect x="100" y="40" width="60" height="60" fill="black"/>
+  <rect x="40" y="100" width="60" height="60" fill="black"/>
+  <rect x="100" y="100" width="60" height="60" fill="none" stroke="black" stroke-width="3"/>
+  
+  <!-- Text -->
+  <text x="100" y="175" font-family="'Courier New', monospace" font-size="14" font-weight="bold" fill="black" text-anchor="middle">CM</text>
+</svg>

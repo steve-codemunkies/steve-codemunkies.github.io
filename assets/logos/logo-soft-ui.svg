@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Soft UI: Rounded friendly mark -->
+  <defs>
+    <linearGradient id="softGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8b4a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4a5a5;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="200" height="200" fill="#f5e6d3" rx="40"/>
+  
+  <!-- Soft rounded shapes -->
+  <circle cx="100" cy="85" r="35" fill="url(#softGrad)"/>
+  <rect x="60" y="120" width="80" height="50" rx="20" fill="url(#softGrad)" opacity="0.7"/>
+  
+  <!-- Friendly text -->
+  <text x="100" y="165" font-family="'Trebuchet MS', sans-serif" font-size="18" font-weight="bold" fill="#f5e6d3" text-anchor="middle">CM</text>
+</svg>

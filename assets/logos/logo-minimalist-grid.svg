@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Minimalist Grid: Simple geometric grid pattern -->
+  <rect width="200" height="200" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Grid pattern -->
+  <g stroke="black" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="200"/>
+    <line x1="100" y1="0" x2="100" y2="200"/>
+    <line x1="150" y1="0" x2="150" y2="200"/>
+    <line x1="0" y1="50" x2="200" y2="50"/>
+    <line x1="0" y1="100" x2="200" y2="100"/>
+    <line x1="0" y1="150" x2="200" y2="150"/>
+  </g>
+  
+  <!-- Accent square -->
+  <rect x="60" y="60" width="80" height="80" fill="none" stroke="#0066cc" stroke-width="2"/>
+  
+  <!-- Text -->
+  <text x="100" y="135" font-family="monospace" font-size="16" font-weight="bold" fill="#0066cc" text-anchor="middle">CM</text>
+</svg>
