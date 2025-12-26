@@ -533,6 +533,11 @@ body.theme-grid-brutalist h6 code {
   font-family: inherit;
 }
 
+body.theme-grid-brutalist .wrap.home a,
+body.theme-grid-brutalist .wrap.home p {
+  font-family: 'Courier New', monospace;
+}
+
 body.theme-grid-brutalist .site-footer {
   background: white;
   border-top: 1px solid #333;
