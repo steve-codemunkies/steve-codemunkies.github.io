@@ -21,14 +21,6 @@ I have been architecting and developing software professionally since 1998, and 
     </a>
   </li>
   <li>
-    <span class="li icon twitter">
-      <i class="fab fa-twitter"></i>
-    </span>
-    <a href="https://twitter.com/{{ site.twitter-personal-username }}">
-      <span class="username">/{{ site.twitter-personal-username }}</span>
-    </a>
-  </li>
-  <li>
     <span class="li icon stack-overflow">
       <i class="fab fa-stack-overflow"></i>
     </span>
