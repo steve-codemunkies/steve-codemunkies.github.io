@@ -6,9 +6,12 @@
   padding: 0;
 }
 
-html, body { height: 100%; }
+html { height: 100%; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -143,6 +146,7 @@ a:visited { color: #aa0000; } */
 .page-content {
   padding: 30px 0;
   background-color: #fff;
+  flex: 1;
 }
 
 .page-content .icon i {
