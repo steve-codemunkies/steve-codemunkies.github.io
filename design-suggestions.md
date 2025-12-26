@@ -167,9 +167,9 @@ include: true
   }
 </style>
 
-<div class="design-showcase">
+  <div class="design-showcase">
   <h1>Modern Blog Design Suggestions</h1>
-  <p>Below are ten carefully curated modern design concepts for steve-codemunkies.github.io. Each design can be toggled to see how it transforms the entire site, including the home page and blog post layouts.</p>
+  <p>Below are eleven carefully curated modern design concepts for steve-codemunkies.github.io. Each design can be toggled to see how it transforms the entire site, including the home page and blog post layouts.</p>
   
   <div class="design-selector">
     <h3>Select a Design to Preview:</h3>
@@ -185,6 +185,7 @@ include: true
       <button class="design-btn" onclick="switchDesign('design8')">Design 8: Minimalist Grid</button>
       <button class="design-btn" onclick="switchDesign('design9')">Design 9: Retro Modern</button>
       <button class="design-btn" onclick="switchDesign('design10')">Design 10: Brutalist</button>
+      <button class="design-btn" onclick="switchDesign('design11')">Design 11: Grid Brutalist</button>
     </div>
   </div>
   
@@ -408,6 +409,28 @@ include: true
         <div class="color-sample" style="background: #cccccc; color: #000;">#cccccc</div>
       </div>
     </div>
+    
+    <!-- Design 11: Grid Brutalist (Hybrid) -->
+    <div class="design-card">
+      <span class="design-number">Design 11</span>
+      <h3>Grid Brutalist</h3>
+      <p><strong>Vision:</strong> Hybrid design combining Brutalist monospace headings with the structured Grid aesthetic for a balanced, organized yet honest approach.</p>
+      <div class="design-features">
+        <h4>Key Features:</h4>
+        <ul>
+          <li>Monospace headings with clean structure</li>
+          <li>Grid's grayscale color palette with #0066cc accent</li>
+          <li>Rigid grid-based layout and alignment</li>
+          <li>Black monospace headers with subtle borders</li>
+          <li>Logo: Grid pattern with monospace typography</li>
+        </ul>
+      </div>
+      <div class="design-colors">
+        <div class="color-sample" style="background: #f0f0f0; color: #333;">#f0f0f0</div>
+        <div class="color-sample" style="background: #0066cc;">#0066cc</div>
+        <div class="color-sample" style="background: #ffffff; border: 2px solid #000;">WHITE</div>
+      </div>
+    </div>
   </div>
   
   <hr style="margin: 60px 0; border: none; border-top: 2px solid #e8e8e8;">
@@ -504,6 +527,13 @@ include: true
         .site-header { background: white; border-top: 5px solid black; }
         a { color: black; text-decoration: underline; }
         h1, h2, h3 { font-weight: normal; }
+      `,
+      'design11': `/* Grid Brutalist Theme */
+        body { background: #f0f0f0; color: #333; font-family: 'Courier New', monospace; }
+        .design-card { background: white; border: 1px solid #333; padding: 32px; margin: 16px 0; }
+        .site-header { background: white; border-top: 8px solid #0066cc; border-bottom: 1px solid #ccc; }
+        a { color: #0066cc; }
+        h1, h2, h3 { font-family: 'Courier New', monospace; border-bottom: 1px solid black; padding-bottom: 10px; }
       `
     };
     

@@ -58,6 +58,11 @@
       name: 'Brutalist',
       class: 'theme-brutalist',
       logo: '/assets/logos/logo-brutalist.svg'
+    },
+    'grid-brutalist': {
+      name: 'Grid Brutalist',
+      class: 'theme-grid-brutalist',
+      logo: '/assets/logos/logo-grid-brutalist.svg'
     }
   };
   
