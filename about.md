@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "About codemunkies"
-description:  "Information about codemunkies ltd and Steven Hocking"
+title: "About Steve Hocking"
+description:  "Information about Steve Hocking, software developer and architect"
 permalink: /about/
 page-type: article
 include: true

@@ -1,12 +1,10 @@
 # Site settings
-title: codemunkies
-email: steve@codemunki.es
+title: Steve Hocking
+email: steve@stevehocking.co.uk
 description: ""
 baseurl: ""
-url: "http://www.codemunki.es"
+url: "https://www.stevehocking.co.uk"
 github-username: steve-codemunkies
-twitter-username: codemunkies
-twitter-personal-username: SteveHocking
 stackoverflow-username: steve
 stackoverflow-userid: 747649
 
