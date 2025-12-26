@@ -2,26 +2,27 @@
 layout: default
 permalink: /
 ---
-<div class="wrap home">
-
-  {% for post in site.posts %}
-    {% if post.tile-image and post.invert-header %}
-  <div class="invert" style="background-image: url('{{ post.tile-image }}');">
-    {% elsif post.tile-image %}
-  <div style="background-image: url('{{ post.tile-image }}');">
-    {% else %}
-  <div>
-    {% endif %}
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    <p class="post-description">{{ post.description }}</p>
-    <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-  </div>
-  {% endfor %}
-
-</div>
+<main>
+  <h1>Articles</h1>
+  
+  <ul class="posts">
+    {% for post in site.posts %}
+    <li class="post">
+      <div class="post-content">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <p class="post-description">{{ post.description }}</p>
+        <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+      </div>
+      {% if post.tile-image %}
+      <div class="post-image" style="background-image: url('{{ post.tile-image }}');"></div>
+      {% else %}
+      <div class="post-image"></div>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</main>
 
 <div class="subscribe-footer">
-
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
