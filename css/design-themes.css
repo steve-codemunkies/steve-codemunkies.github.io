@@ -561,6 +561,10 @@ body.theme-grid-brutalist .highlight * {
   background-image: none !important;
 }
 
+body.theme-grid-brutalist .highlight code {
+  border: none !important;
+}
+
 body.theme-grid-brutalist code {
   border: 1px solid #333;
 }
