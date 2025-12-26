@@ -1,64 +1,9 @@
-// Design Suggestions Theme Switcher
+// Design Theme Switcher - Grid Brutalist Only
 (function() {
   const STORAGE_KEY = 'design-theme-preference';
-  const DEFAULT_THEME = 'default';
+  const DEFAULT_THEME = 'grid-brutalist';
   
   const themes = {
-    'default': {
-      name: 'Default',
-      class: '',
-      logo: '/cm.png'
-    },
-    'minimal-dark': {
-      name: 'Minimal Dark',
-      class: 'theme-minimal-dark',
-      logo: '/assets/logos/logo-minimal-dark.svg'
-    },
-    'modern-gradient': {
-      name: 'Modern Gradient',
-      class: 'theme-modern-gradient',
-      logo: '/assets/logos/logo-modern-gradient.svg'
-    },
-    'glassmorphism': {
-      name: 'Glassmorphism',
-      class: 'theme-glassmorphism',
-      logo: '/assets/logos/logo-glassmorphism.svg'
-    },
-    'bold-typography': {
-      name: 'Bold Typography',
-      class: 'theme-bold-typography',
-      logo: '/assets/logos/logo-bold-typography.svg'
-    },
-    'neumorphic': {
-      name: 'Neumorphic',
-      class: 'theme-neumorphic',
-      logo: '/assets/logos/logo-neumorphic.svg'
-    },
-    'cyberpunk': {
-      name: 'Cyberpunk',
-      class: 'theme-cyberpunk',
-      logo: '/assets/logos/logo-cyberpunk.svg'
-    },
-    'soft-ui': {
-      name: 'Soft UI',
-      class: 'theme-soft-ui',
-      logo: '/assets/logos/logo-soft-ui.svg'
-    },
-    'minimalist-grid': {
-      name: 'Minimalist Grid',
-      class: 'theme-minimalist-grid',
-      logo: '/assets/logos/logo-minimalist-grid.svg'
-    },
-    'retro-modern': {
-      name: 'Retro Modern',
-      class: 'theme-retro-modern',
-      logo: '/assets/logos/logo-retro-modern.svg'
-    },
-    'brutalist': {
-      name: 'Brutalist',
-      class: 'theme-brutalist',
-      logo: '/assets/logos/logo-brutalist.svg'
-    },
     'grid-brutalist': {
       name: 'Grid Brutalist',
       class: 'theme-grid-brutalist',

@@ -1,509 +1,39 @@
-/* Design Suggestions CSS Themes */
-/* Include this file to enable design switching functionality */
+/* Grid Brutalist Theme - Default Design */
+/* Combines Brutalist monospace headings with Grid's structured aesthetic */
 
-/* ========================================
-   Theme 1: Minimal Dark
-   ======================================== */
-body.theme-minimal-dark {
-  background-color: #1a1a1a;
-  color: #e0e0e0;
-}
-
-body.theme-minimal-dark a {
-  color: #00d9ff;
-  border-bottom-color: #00d9ff;
-  box-shadow: inset 0 -5px 0 rgba(0, 217, 255, 0.3);
-}
-
-body.theme-minimal-dark a:hover {
-  background-color: rgba(0, 217, 255, 0.2);
-  color: #00d9ff;
-}
-
-body.theme-minimal-dark .site-header {
-  background-color: #0d0d0d;
-  border-top-color: #00d9ff;
-  border-bottom-color: #333;
-}
-
-body.theme-minimal-dark .site-title,
-body.theme-minimal-dark .site-title:hover,
-body.theme-minimal-dark .site-title:visited {
-  color: #e0e0e0;
-}
-
-body.theme-minimal-dark .site-nav .page-link {
-  color: #b0b0b0;
-}
-
-body.theme-minimal-dark .post-header {
-  background-color: #0066ff;
-}
-
-body.theme-minimal-dark .design-card {
-  background-color: #2d2d2d;
-  color: #e0e0e0;
-  border-color: #444;
-}
-
-body.theme-minimal-dark .site-footer {
-  background-color: #0d0d0d;
-  border-top-color: #333;
-}
-
-/* ========================================
-   Theme 2: Modern Gradient
-   ======================================== */
-body.theme-modern-gradient {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-attachment: fixed;
-  color: #333;
-}
-
-body.theme-modern-gradient .site-header {
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  border-top-color: #fff;
-}
-
-body.theme-modern-gradient .site-title,
-body.theme-modern-gradient .site-title:hover,
-body.theme-modern-gradient .site-title:visited {
-  color: #ffffff;
-}
-
-body.theme-modern-gradient .site-nav .page-link {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-body.theme-modern-gradient .page-content {
-  background-color: transparent;
-}
-
-body.theme-modern-gradient .wrap.home {
-  background-attachment: fixed;
-}
-
-body.theme-modern-gradient .design-card {
-  background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-/* ========================================
-   Theme 3: Glassmorphism
-   ======================================== */
-body.theme-glassmorphism {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  background-attachment: fixed;
-}
-
-body.theme-glassmorphism .site-header {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  border-top-color: rgba(255, 255, 255, 0.5);
-}
-
-body.theme-glassmorphism .site-title,
-body.theme-glassmorphism .site-title:hover {
-  color: #ffffff;
-}
-
-body.theme-glassmorphism .page-content {
-  background-color: transparent;
-}
-
-body.theme-glassmorphism .wrap {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 30px;
-  margin: 20px auto;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-body.theme-glassmorphism .design-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-}
-
-body.theme-glassmorphism a {
-  color: #ffffff;
-}
-
-/* ========================================
-   Theme 4: Bold Typography
-   ======================================== */
-body.theme-bold-typography {
-  font-family: Georgia, serif;
-  background-color: #ffffff;
-  color: #000000;
-}
-
-body.theme-bold-typography h1,
-body.theme-bold-typography h2,
-body.theme-bold-typography h3,
-body.theme-bold-typography h4,
-body.theme-bold-typography h5,
-body.theme-bold-typography h6 {
-  font-family: 'Courier New', monospace;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-body.theme-bold-typography a {
-  color: #ff6b35;
-  border-bottom-color: #ff6b35;
-  box-shadow: inset 0 -5px 0 rgba(255, 107, 53, 0.3);
-}
-
-body.theme-bold-typography .site-header {
-  border-top-color: #ff6b35;
-  background-color: #ffffff;
-}
-
-body.theme-bold-typography .site-title {
-  color: #000000;
-}
-
-body.theme-bold-typography .post-header h1 {
-  font-size: 52px;
-  letter-spacing: 3px;
-}
-
-body.theme-bold-typography .design-card {
-  border: 2px solid #000000;
-}
-
-/* ========================================
-   Theme 5: Neumorphic
-   ======================================== */
-body.theme-neumorphic {
-  background-color: #e0e5ec;
-  color: #333;
-}
-
-body.theme-neumorphic .site-header {
-  background-color: #e0e5ec;
-  box-shadow: 9px 9px 16px #a3b1c6, -9px -9px 16px #ffffff;
-  border-top-color: #a3b1c6;
-}
-
-body.theme-neumorphic .page-content {
-  background-color: #e0e5ec;
-}
-
-body.theme-neumorphic .wrap {
-  border-radius: 20px;
-}
-
-body.theme-neumorphic .design-card {
-  background: #e0e5ec;
-  box-shadow: 9px 9px 16px #a3b1c6, -9px -9px 16px #ffffff;
-  border-radius: 20px;
-  border: none;
-}
-
-body.theme-neumorphic a {
-  color: #6c757d;
-}
-
-body.theme-neumorphic .site-footer {
-  background-color: #e0e5ec;
-  border-top: none;
-}
-
-/* ========================================
-   Theme 6: Cyberpunk
-   ======================================== */
-body.theme-cyberpunk {
-  background-color: #0a0e27;
-  color: #00ff88;
-  text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
-}
-
-body.theme-cyberpunk a {
-  color: #ff00ff;
-  text-shadow: 0 0 10px #ff00ff;
-  border-bottom-color: #ff00ff;
-  box-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
-}
-
-body.theme-cyberpunk .site-header {
-  background-color: #0a0e27;
-  border-top-color: #00ff88;
-  border-bottom-color: #ff00ff;
-  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
-}
-
-body.theme-cyberpunk .site-title {
-  color: #00ff88;
-  text-shadow: 0 0 10px #00ff88;
-}
-
-body.theme-cyberpunk .page-content {
-  background-color: #0a0e27;
-}
-
-body.theme-cyberpunk .design-card {
-  background-color: #1a1f3a;
-  border: 2px solid #ff00ff;
-  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3), inset 0 0 10px rgba(255, 0, 255, 0.1);
-  color: #00ff88;
-}
-
-body.theme-cyberpunk .post-header {
-  background-color: #0a0e27;
-  box-shadow: inset 0 0 20px rgba(0, 255, 136, 0.2);
-}
-
-body.theme-cyberpunk h1, body.theme-cyberpunk h2, body.theme-cyberpunk h3 {
-  color: #ff00ff;
-  text-shadow: 0 0 10px #ff00ff;
-}
-
-body.theme-cyberpunk .site-footer {
-  background-color: #0a0e27;
-  border-top-color: #ff00ff;
-}
-
-/* ========================================
-   Theme 7: Soft UI
-   ======================================== */
-body.theme-soft-ui {
-  background: linear-gradient(135deg, #faf3f0 0%, #f5e6d3 100%);
-  background-attachment: fixed;
-  color: #4a3f35;
-}
-
-body.theme-soft-ui .site-header {
-  background: linear-gradient(90deg, #e8b4a8, #d4a5a5);
-  border-radius: 0 0 30px 30px;
-  border-top-color: #d4a5a5;
-  box-shadow: 0 8px 20px rgba(210, 180, 160, 0.2);
-}
-
-body.theme-soft-ui .site-title {
-  color: #ffffff;
-}
-
-body.theme-soft-ui .page-content {
-  background-color: transparent;
-}
-
-body.theme-soft-ui .wrap {
-  border-radius: 30px;
-}
-
-body.theme-soft-ui .design-card {
-  background: #fef6f1;
-  border-radius: 30px;
-  border: none;
-  box-shadow: 8px 8px 20px rgba(210, 180, 160, 0.3);
-}
-
-body.theme-soft-ui a {
-  color: #c17d68;
-}
-
-body.theme-soft-ui .site-footer {
-  background: linear-gradient(90deg, #e8b4a8, #d4a5a5);
-  border-top: none;
-  border-radius: 30px 30px 0 0;
-}
-
-/* ========================================
-   Theme 8: Minimalist Grid
-   ======================================== */
-body.theme-minimalist-grid {
+body {
   background: #f0f0f0;
   color: #333;
 }
 
-body.theme-minimalist-grid .site-header {
+.site-header {
   background: white;
   border-top: 8px solid #0066cc;
   border-bottom: 1px solid #ccc;
 }
 
-body.theme-minimalist-grid .page-content {
+.page-content {
   background-color: #f0f0f0;
 }
 
-body.theme-minimalist-grid .wrap {
+.wrap {
   max-width: 900px;
 }
 
-body.theme-minimalist-grid .design-card {
+.design-card {
   background: white;
   border: 1px solid #333;
   padding: 32px;
   margin: 16px 0;
 }
 
-body.theme-minimalist-grid a {
+a {
   color: #0066cc;
   border-bottom-color: #0066cc;
   box-shadow: inset 0 -3px 0 #0066cc;
 }
 
-body.theme-minimalist-grid .site-footer {
-  background: white;
-  border-top: 1px solid #333;
-}
-
-/* ========================================
-   Theme 9: Retro Modern
-   ======================================== */
-body.theme-retro-modern {
-  background: #ffbe0b;
-  color: #ff006e;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-}
-
-body.theme-retro-modern .site-header {
-  background: #ff006e;
-  color: #00d9ff;
-  border-top-color: #00d9ff;
-  border-bottom-color: #00d9ff;
-}
-
-body.theme-retro-modern .site-title,
-body.theme-retro-modern .site-title:hover {
-  color: #00d9ff;
-}
-
-body.theme-retro-modern .page-content {
-  background-color: #ffbe0b;
-}
-
-body.theme-retro-modern .design-card {
-  background: #00d9ff;
-  color: #ff006e;
-  border: 3px solid #ff006e;
-  transform: rotate(-1deg);
-  padding: 25px;
-}
-
-body.theme-retro-modern .design-card:nth-child(even) {
-  transform: rotate(1deg);
-}
-
-body.theme-retro-modern a {
-  color: #ff006e;
-  border-bottom-color: #ff006e;
-}
-
-body.theme-retro-modern .site-footer {
-  background: #ff006e;
-  color: #00d9ff;
-  border-top-color: #00d9ff;
-}
-
-/* ========================================
-   Theme 10: Brutalist
-   ======================================== */
-body.theme-brutalist {
-  font-family: 'Courier New', monospace;
-  background: white;
-  color: black;
-  line-height: 1.6;
-}
-
-body.theme-brutalist * {
-  border-radius: 0 !important;
-}
-
-body.theme-brutalist .site-header {
-  background: white;
-  border-top: 5px solid black;
-  border-bottom: 2px solid black;
-}
-
-body.theme-brutalist .site-title,
-body.theme-brutalist .site-title:hover {
-  color: black;
-}
-
-body.theme-brutalist .page-content {
-  background: white;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-}
-
-body.theme-brutalist .design-card {
-  background: white;
-  border: 2px solid black;
-  padding: 20px;
-  margin: 20px 0;
-}
-
-body.theme-brutalist a {
-  color: black;
-  text-decoration: underline;
-  border-bottom: none;
-  box-shadow: none;
-}
-
-body.theme-brutalist h1,
-body.theme-brutalist h2,
-body.theme-brutalist h3 {
-  font-weight: normal;
-  border-bottom: 1px solid black;
-  padding-bottom: 10px;
-}
-
-body.theme-brutalist .site-footer {
-  background: white;
-  border-top: 5px solid black;
-}
-
-body.theme-brutalist pre {
-  border: 2px solid black;
-  background: white;
-}
-
-body.theme-brutalist code {
-  border: 1px solid black;
-}
-
-/* ========================================
-   Theme 11: Grid Brutalist (Hybrid)
-   ======================================== */
-body.theme-grid-brutalist {
-  background: #f0f0f0;
-  color: #333;
-}
-
-body.theme-grid-brutalist .site-header {
-  background: white;
-  border-top: 8px solid #0066cc;
-  border-bottom: 1px solid #ccc;
-}
-
-body.theme-grid-brutalist .page-content {
-  background-color: #f0f0f0;
-}
-
-body.theme-grid-brutalist .wrap {
-  max-width: 900px;
-}
-
-body.theme-grid-brutalist .design-card {
-  background: white;
-  border: 1px solid #333;
-  padding: 32px;
-  margin: 16px 0;
-}
-
-body.theme-grid-brutalist a {
-  color: #0066cc;
-  border-bottom-color: #0066cc;
-  box-shadow: inset 0 -3px 0 #0066cc;
-}
-
-body.theme-grid-brutalist h1 {
+h1 {
   font-family: 'Courier New', monospace;
   font-weight: bold;
   border-bottom: 1px solid black;
@@ -511,11 +41,11 @@ body.theme-grid-brutalist h1 {
   letter-spacing: 1px;
 }
 
-body.theme-grid-brutalist h2,
-body.theme-grid-brutalist h3,
-body.theme-grid-brutalist h4,
-body.theme-grid-brutalist h5,
-body.theme-grid-brutalist h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Courier New', monospace;
   font-weight: normal;
   border-bottom: 1px solid black;
@@ -523,48 +53,48 @@ body.theme-grid-brutalist h6 {
   letter-spacing: 1px;
 }
 
-body.theme-grid-brutalist h1 code,
-body.theme-grid-brutalist h2 code,
-body.theme-grid-brutalist h3 code,
-body.theme-grid-brutalist h4 code,
-body.theme-grid-brutalist h5 code,
-body.theme-grid-brutalist h6 code {
+h1 code,
+h2 code,
+h3 code,
+h4 code,
+h5 code,
+h6 code {
   font-size: 1em;
   font-family: inherit;
 }
 
-body.theme-grid-brutalist .wrap.home a,
-body.theme-grid-brutalist .wrap.home p {
+.wrap.home a,
+.wrap.home p {
   font-family: 'Courier New', monospace;
 }
 
-body.theme-grid-brutalist .wrap.home a.post-link {
+.wrap.home a.post-link {
   font-weight: bold;
 }
 
-body.theme-grid-brutalist .site-footer {
+.site-footer {
   background: white;
   border-top: 1px solid #333;
 }
 
-body.theme-grid-brutalist pre {
+pre {
   border: 1px solid #333;
   background: #f5f5f5 !important;
 }
 
-body.theme-grid-brutalist .highlight {
+.highlight {
   background: #f5f5f5 !important;
 }
 
-body.theme-grid-brutalist .highlight * {
+.highlight * {
   background-color: transparent !important;
   background-image: none !important;
 }
 
-body.theme-grid-brutalist .highlight code {
+.highlight code {
   border: none !important;
 }
 
-body.theme-grid-brutalist code {
+code {
   border: 1px solid #333;
 }
