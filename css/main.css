@@ -168,7 +168,7 @@ a:visited { color: #aa0000; } */
   margin-bottom: 30px;
 }
 
-.post {
+.posts li.post {
   display: grid;
   grid-template-columns: 1fr 200px;
   gap: 2rem;
@@ -177,7 +177,7 @@ a:visited { color: #aa0000; } */
   padding-left: 1.5rem;
 }
 
-.post-content {
+.posts .post-content {
   display: flex;
   flex-direction: column;
 }
@@ -521,7 +521,7 @@ li img {
   }
 
   /* Post grid responsive layout */
-  .post {
+  .posts li.post {
     grid-template-columns: 1fr;
   }
 
