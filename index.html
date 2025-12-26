@@ -14,9 +14,9 @@ permalink: /
         <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
       </div>
       {% if post.tile-image %}
-      <div class="post-image" style="background-image: url('{{ post.tile-image }}');"></div>
+      <img src="{{ post.tile-image }}" alt="{{ post.title }}" class="post-image" />
       {% else %}
-      <div class="post-image" style="background-image: url('/assets/tile.jpg');"></div>
+      <img src="/assets/tile.jpg" alt="{{ post.title }}" class="post-image" />
       {% endif %}
     </li>
     {% endfor %}
