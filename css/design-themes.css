@@ -549,7 +549,15 @@ body.theme-grid-brutalist .site-footer {
 
 body.theme-grid-brutalist pre {
   border: 1px solid #333;
-  background: white;
+  background: #f5f5f5;
+}
+
+body.theme-grid-brutalist .highlight {
+  background: #f5f5f5 !important;
+}
+
+body.theme-grid-brutalist .highlight span {
+  background-color: transparent !important;
 }
 
 body.theme-grid-brutalist code {
