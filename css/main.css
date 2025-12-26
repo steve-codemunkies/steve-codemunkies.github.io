@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  background-color: #fdfdfd;
+  background-color: #f0f0f0;
 }
 
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
@@ -50,8 +50,8 @@ a:visited { color: #aa0000; } */
 /* Site header */
 
 .site-header {
-  border-top: 5px solid #333;
-  border-bottom: 1px solid #e8e8e8;
+  border-top: 8px solid #0066cc;
+  border-bottom: 1px solid #ccc;
   min-height: 56px;
   background-color: white;
 }
@@ -80,6 +80,14 @@ a:visited { color: #aa0000; } */
   margin-left: 20px;
   color: #727272;
   letter-spacing: -.5px;
+}
+
+/* Main content wrapper */
+main {
+  max-width: 900px;
+  padding: 0 30px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Site footer */
@@ -169,36 +177,38 @@ a:visited { color: #aa0000; } */
 }
 
 .posts li.post {
+  background: white;
+  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 200px;
   gap: 2rem;
   align-items: start;
   border-left: 4px solid #0066cc;
-  padding-left: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .posts .post-content {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .post-image {
   width: 200px;
   height: 150px;
-  background-size: cover;
-  background-position: center;
-  background-color: #e8e8e8;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .posts .post-link {
-  font-size: 24px;
-  letter-spacing: -1px;
-  line-height: 1;
+  font-size: 1.3rem;
   font-family: 'Courier New', monospace;
   color: #0066cc;
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.8rem;
 }
 
 .posts .post-link:hover {
@@ -206,15 +216,15 @@ a:visited { color: #aa0000; } */
 }
 
 .posts .post-description {
-  margin: 0.5rem 0;
-  color: #333;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 0.8rem;
 }
 
 .posts .post-date {
-  display: block;
-  font-size: 15px;
-  color: #818181;
-  margin-top: auto;
+  font-size: 0.9rem;
+  color: #999;
 }
 
 .wrap.home {
