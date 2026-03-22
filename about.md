@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "About codemunkies"
-description:  "Information about codemunkies ltd and Steven Hocking"
+title: "About stevehocking.co.uk"
+description:  "Information about Steven Hocking"
 permalink: /about/
 page-type: article
 include: true
@@ -18,22 +18,6 @@ I have been architecting and developing software professionally since 1998, and 
     </span>
     <a href="https://github.com/{{ site.github-username }}">
       <span class="username">/{{ site.github-username }}</span>
-    </a>
-  </li>
-  <li>
-    <span class="li icon twitter">
-      <i class="fab fa-twitter"></i>
-    </span>
-    <a href="https://twitter.com/{{ site.twitter-personal-username }}">
-      <span class="username">/{{ site.twitter-personal-username }}</span>
-    </a>
-  </li>
-  <li>
-    <span class="li icon stack-overflow">
-      <i class="fab fa-stack-overflow"></i>
-    </span>
-    <a href="http://stackoverflow.com/users/{{ site.stackoverflow-userid }}/{{ site.stackoverflow-username }}">
-      <span class="username">/{{ site.stackoverflow-username }}</span>
     </a>
   </li>
   <li>
