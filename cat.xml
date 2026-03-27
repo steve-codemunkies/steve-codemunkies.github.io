@@ -8,10 +8,12 @@ layout: none
     <description>{{ site.description | xml_escape }}</description>
     <link>{{ site.url }}{{ site.baseurl }}/</link>
     <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    {% assign categories_list = site.categories | sort %}
-    {% for category in categories_list %}
-      {% assign category_posts = site.categories[page.category] %}
-    ``{% for post in category_posts %}
+    {% assign sorted_categories = site.categories | sort %}
+    {% for category in sorted_categories %}
+      {% capture tag_name %}{{ category | first }}{% endcapture %}
+      <items category="{{ tag_name | xml_escape }}">
+      {% assign posts = site.categories[tag_name] | sort: "date" | reverse %}
+      {% for post in posts %}
         <item>
           <title>{{ post.title | xml_escape }}</title>
           <description>{{ post.description | xml_escape }}</description>
@@ -27,6 +29,7 @@ layout: none
           {% endif %}
         </item>
       {% endfor %}
+      </items>
     {% endfor %}
   </channel>
 </rss>
