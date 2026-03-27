@@ -43,7 +43,8 @@
 				"davidanson.vscode-markdownlint",
 				"yzhang.markdown-all-in-one",
 				"ms-azuretools.vscode-docker",
-				"jebbs.plantuml"
+				"jebbs.plantuml",
+				"github.vscode-github-actions"
 			]
 		}
 	}
