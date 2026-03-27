@@ -1,50 +1,63 @@
-name: Build and deploy beta.codemunki.es
-run-name: Build and deploy beta.codemunki.es ${{ github.actor }}
+name: Build and deploy stevehocking.co.uk
 
 on:
   push:
-    branches:
-      - 'main'
-      - 'aws/*'
-  
-  # Allow this workflow to run from the Actions tab
   workflow_dispatch:
 
+# Permissions required by actions/deploy-pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevent overlapping deployments; never cancel an in-progress deploy
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  publish-beta-codemunki-es:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: 📂 setup
-        uses: actions/checkout@v2
+      - name: 📂 Checkout repository
+        uses: actions/checkout@v4
 
-      - name: setup node 🍵📃 
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16"
-
-      - name: setup ruby 💎 
+      - name: 💎 Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1
+          ruby-version: '3.3'
+          bundler-cache: true   # Runs `bundle install` and caches gems automatically
 
-      # Build the website (locally)
-      - name: install jekyll dependencies & build site 🔨
-        uses: limjh16/jekyll-action-ts@v2
+      - name: ⚙️ Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: 🔨 Build Jekyll site
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+      - name: 📦 Upload Pages artifact
+        if: github.ref == 'refs/heads/main'   # ← gate the artifact upload
+        uses: actions/upload-pages-artifact@v3
+        # Uploads the default Jekyll output directory: _site/
+
+      - name: 📦 Upload build artifact (non-main branches)
+        if: github.ref != 'refs/heads/main'
+        uses: actions/upload-artifact@v4
         with:
-          enable_cache: true # Enables caching. Similar to https://github.com/actions/cache.
+          name: jekyll-site-${{ github.ref_name }}
+          path: _site/
+          retention-days: 7     
 
-      - name: Configure aws credentials
-        uses: aws-actions/configure-aws-credentials@master
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
-          aws-region: ${{ secrets.AWS_REGION }}
-
-      - name: install CloudFront Function dependencies and build 🧪🔨
-        run: cd js-function && npm install && npm run test
-
-      - name: install cdk node dependencies 🔨
-        run: cd cdk && npm install
-
-      - name: deploy it all! 🙈
-        run: cd cdk && npm run cdk deploy
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'   # ← gate the deploy job
+    steps:
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
