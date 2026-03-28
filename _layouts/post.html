@@ -20,6 +20,14 @@ layout: default
     <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </div>
 
+  {% if page.categories %}
+  <div class="post-categories">
+    {% for category in page.categories %}
+      <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/" class="category-badge">{{ category }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
   <article class="post-content">
     {{ content }}
   </article>

@@ -633,3 +633,30 @@ tbody tr {
   color: #828282;
   margin-left: 6px;
 }
+
+/* Post category badges */
+/* ----------------------------------------------------------*/
+
+.post-categories {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 1px solid #aa0000;
+  border-radius: 12px;
+  font-size: 13px;
+  color: #aa0000;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.category-badge:hover {
+  background-color: #aa0000;
+  color: #fff;
+  text-decoration: none;
+}

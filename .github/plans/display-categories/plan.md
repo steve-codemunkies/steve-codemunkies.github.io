@@ -347,7 +347,7 @@ include: true
 
 ---
 
-## Task 7 — Display Categories on the Post Page
+## Task 7 — Display Categories on the Post Page ✅
 
 **Requirement:** _"On the post page provide three options for displaying categories beneath the tag line and date, the category should link to the category page"_
 
