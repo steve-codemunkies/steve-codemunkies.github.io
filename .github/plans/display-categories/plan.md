@@ -221,7 +221,7 @@ This will update `Gemfile.lock` with the new gem.
 
 ---
 
-## Task 5 — Create the Category Index Layout
+## Task 5 — Create the Category Index Layout ✅
 
 **Requirement:** _"For each category list the posts in reverse date order, reuse the formatting from the main page"_
 
