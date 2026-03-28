@@ -84,7 +84,7 @@ The site already has four CSS breakpoints, but they don't fully align with the C
 
 ---
 
-## Task 3 — Move Post Tagline and Date Off the Hero Image
+## Task 3 — Move Post Tagline and Date Off the Hero Image ✅
 
 **Requirement:** _"Move post tagline and date off the hero image"_
 
