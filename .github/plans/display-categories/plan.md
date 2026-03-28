@@ -171,7 +171,7 @@ The existing `.post-header h2` and `.post-header .meta` rules targeted those ele
 
 ---
 
-## Task 4 — Add `jekyll-category-pages` Plugin
+## Task 4 — Add `jekyll-category-pages` Plugin ✅
 
 **Requirement:** _"Add `jekyll-category-pages` Plugin"_
 
@@ -471,7 +471,7 @@ Best if: you want categories to feel like metadata with clear visual hierarchy. 
 
 ---
 
-> **Decision required:** Choose Option A, B, or C before Task 7 is implemented.
+> **Decision:** Option B (Pill/badge tags) has been selected for implementation.
 
 ---
 

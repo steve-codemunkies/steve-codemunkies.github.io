@@ -23,3 +23,9 @@ exclude:
   - .vscode
   - cdk
   - js-function
+
+plugins:
+  - jekyll-category-pages
+
+category_layout: "category_index.html"
+category_path: "categories"
