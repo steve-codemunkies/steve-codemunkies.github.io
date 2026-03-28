@@ -49,7 +49,7 @@ The site already has four CSS breakpoints, but they don't fully align with the C
 
 ---
 
-## Task 2 — Make Post Title Bolder
+## Task 2 — Make Post Title Bolder ✅
 
 **Requirement:** _"Make the post title a little bolder"_
 
