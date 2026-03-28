@@ -1,0 +1,28 @@
+---
+layout: default
+title: Categories
+description: "Browse posts by category"
+permalink: /categories/
+include: true
+---
+<header class="post-header post" style="background-image: url('/assets/blog-banner.jpg');">
+  <div class="wrap">
+    <h1>Categories</h1>
+  </div>
+</header>
+
+<div class="wrap post">
+  <article class="post-content">
+    <ul class="category-list">
+      {% assign categories_list = site.categories | sort %}
+      {% for category in categories_list %}
+        <li>
+          <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">
+            {{ category[0] }}
+          </a>
+          <span class="category-count">({{ category[1].size }})</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </article>
+</div>
