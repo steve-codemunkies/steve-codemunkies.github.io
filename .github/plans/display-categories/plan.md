@@ -274,7 +274,7 @@ layout: default
 
 ---
 
-## Task 6 — Create the Categories Index Page
+## Task 6 — Create the Categories Index Page ✅
 
 **Requirement:** _"Add a page listing categories, this will live at `/categories/`, style the same as main and about pages"_
 
