@@ -25,6 +25,7 @@ exclude:
   - js-function
 
 plugins:
+  - jekyll-paginate
   - jekyll-category-pages
 
 category_layout: "category_index.html"
