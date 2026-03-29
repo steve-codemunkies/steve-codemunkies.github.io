@@ -468,15 +468,22 @@ li img {
 /* media queries */
 /* ----------------------------------------------------------*/
 
-/* < 1024px: single column, image left of content */
-@media screen and (max-width: 1023px) {
+/* <= 1440px: two columns */
+@media screen and (max-width: 1440px) {
+  .wrap.home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* <= 1024px: single column, image left of content */
+@media screen and (max-width: 1024px) {
   .wrap.home {
     grid-template-columns: 1fr;
   }
 }
 
-/* < 428px: image above, content below */
-@media screen and (max-width: 427px) {
+/* < 768px: image above, content below */
+@media screen and (max-width: 767px) {
   .post-tile {
     flex-direction: column;
   }
