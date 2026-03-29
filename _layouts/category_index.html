@@ -11,17 +11,27 @@ layout: default
 
   {% assign sorted_posts = page.posts | sort: 'date' | reverse %}
   {% for post in sorted_posts %}
-    {% if post.tile-image and post.invert-header %}
-  <div class="invert" style="background-image: url('{{ post.tile-image }}');">
-    {% elsif post.tile-image %}
-  <div style="background-image: url('{{ post.tile-image }}');">
-    {% else %}
-  <div>
-    {% endif %}
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    <p class="post-description">{{ post.description }}</p>
-    <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
-  </div>
+  <article class="post-tile">
+    <div class="post-tile-image">
+      {% if post.tile-image %}
+      <img src="{{ post.tile-image }}" alt="{{ post.title }}">
+      {% else %}
+      <img src="/assets/tile.jpg" alt="{{ post.title }}">
+      {% endif %}
+    </div>
+    <div class="post-tile-content">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <p class="post-description">{{ post.description }}</p>
+      <p class="post-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+      {% if post.categories %}
+      <div class="post-tile-categories">
+        {% for category in post.categories %}
+          <a href="{{ site.baseurl }}/categories/{{ category | slugify }}/" class="category-badge">{{ category }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </article>
   {% endfor %}
 
 </div>
