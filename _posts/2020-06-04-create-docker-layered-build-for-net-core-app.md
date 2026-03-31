@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Create a Docker Layered Build .net core Applications"
 description:  "I feel the need, the need for speed!"
 date:   	2020-06-04 20:55:00
-categories: docker netcore layers unittest
+categories: docker dotnet unittest
 comments: false
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg

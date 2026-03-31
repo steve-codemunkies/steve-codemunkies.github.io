@@ -3,7 +3,7 @@ layout: 	post
 title:  	"How to destroy the performance of an SQL query, and then bring it back"
 description:  "But it's only a FLAG!!!"
 date:   	2016-09-09 15:00:00
-categories: sql-server query performance
+categories: sqlserver performance
 comments: false
 page-type: article
 hero-image: /assets/2016-09-09-speed.jpg

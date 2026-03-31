@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Bulk updates to files using Powershell"
 description:  "Sometimes you just have to do some bulk updating on some files."
 date:   	2019-01-07 21:00:00
-categories: powershell bulk
+categories: powershell
 comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg

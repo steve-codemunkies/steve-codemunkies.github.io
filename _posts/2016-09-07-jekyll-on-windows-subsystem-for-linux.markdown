@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Running Jekyll on Windows Subsystem for Linux"
 description:  "Yuh, Jekyll, on Windows, without errors!"
 date:   	2016-09-07 10:30:00
-categories: jekyll windows bash-on-windows susbsystem-for-linux
+categories: jekyll windows bash wsl
 comments: false
 page-type: article
 ---

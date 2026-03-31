@@ -3,7 +3,7 @@ layout: 	post
 title:  	"How not to write SQL statements"
 description:  "Your TSQL statements might be around a lot longer than you expect..."
 date:   	2018-05-11 13:15:00
-categories: legacy maintenance sql tsql
+categories: legacy maintenance sqlserver
 comments: false
 page-type: article
 hero-image: /assets/2015-11-05-legacy.jpg

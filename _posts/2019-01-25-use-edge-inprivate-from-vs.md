@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Use Edge In-Private from Visual Studio"
 description:  "What Microsoft giveth with one hand occasionally makes you facepalm."
 date:   	2019-01-25 21:00:00
-categories: vs visualstudio edge inprivate
+categories: visualstudio
 comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg

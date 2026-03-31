@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Testing the configuration of an AWS API Gateway in a CDK deployment"
 description:  "Unit testing IaC? Really..."
 date:   	2025-03-01 20:30:00
-categories: aws cdk api-gateway unittest
+categories: aws aws-cdk dotnet unittest
 comments: false
 page-type: article
 hero-image: /assets/2020-04-21-clouds.jpg

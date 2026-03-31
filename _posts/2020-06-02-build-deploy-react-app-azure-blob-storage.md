@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Build and Deploy a React App to Azure Blob Storage using Github Actions"
 description:  "Free CI/CD"
 date:   	2020-06-02 20:30:00
-categories: azure blob-storage azure-blob-storage static-content react github github-actions
+categories: azure azure-blob-storage react github-actions
 comments: false
 page-type: article
 hero-image: /assets/2020-04-21-clouds.jpg

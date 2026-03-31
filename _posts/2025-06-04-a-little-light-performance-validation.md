@@ -3,7 +3,7 @@ layout: 	post
 title:  	"A little light performance validation"
 description:  "Is this a string value, or... Never mind!"
 date:   	2025-06-04 16:00:00
-categories: dotnet8 benchmarkdotnet list switch performance-testing string int
+categories: dotnet benchmarkdotnet performance-testing
 comments: false
 page-type: article
 hero-image: /assets/2021-05-03-web-dev.jpg

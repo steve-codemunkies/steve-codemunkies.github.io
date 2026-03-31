@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Implementing an AverageTimer32 Performance Counter in .NET"
 description:  "Use just one performance counter to monitor performance, not with new AverageTimer32 Performance Counters"
 date:   	2015-12-08 12:30:00
-categories: dotnet csharp perfmon performance-counter averagetimer32
+categories: dotnet perfmon performance-counter
 comments: false
 page-type: article
 ---

@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Updating WSL on Login"
 description:  "It's not a better way, it's just a different way"
 date:   	2025-08-26 09:30:00
-categories: wsl2 powershell
+categories: wsl powershell
 comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg

@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Not all changes to your React components result in events"
 description:  "Your expectation may be being matched by mistake"
 date:   	2021-05-10 19:00:00
-categories: javascript react material-ui
+categories: javascript react
 comments: false
 page-type: article
 hero-image: /assets/2021-05-03-web-dev.jpg

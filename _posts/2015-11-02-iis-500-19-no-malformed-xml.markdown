@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Why am I getting a 500.19 from IIS when my xml isn't malformed?"
 description:  "What? These URLRewrite rules?"
 date:   	2015-11-02 15:30:00
-categories: android pwdgnr8r preferences app
+categories: iis jenkins octopus-deploy
 comments: false
 page-type: article
 ---

@@ -3,7 +3,7 @@ layout: 	post
 title:  	"What is event sourcing?"
 description:  "Why shoud I care? And will it make me tea and toast in the morning?"
 date:   	2019-02-24 14:00:00
-categories: event events eventstore eventsourcing
+categories: events eventstore eventsourcing
 comments: false
 page-type: article
 hero-image: /assets/2019-02-14-events.jpg

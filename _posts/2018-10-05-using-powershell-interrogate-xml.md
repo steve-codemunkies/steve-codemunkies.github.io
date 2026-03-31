@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Using Powershell to interrogate xml"
 description:  "What to do when confronted with 100,000 lines of technobabble"
 date:   	2018-10-05 10:15:00
-categories: powershell xml xpath
+categories: powershell xml
 comments: false
 page-type: article
 ---
