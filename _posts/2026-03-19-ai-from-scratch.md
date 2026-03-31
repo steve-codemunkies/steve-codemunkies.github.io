@@ -3,7 +3,7 @@ layout: 	post
 title:  	"AI from scratch: How to start a project using GitHub SpecKit"
 description:  "From zero to ai hero."
 date:   	2026-03-18 20:00:00
-categories: ai dotnet
+categories: ai dotnet copilot
 comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg
