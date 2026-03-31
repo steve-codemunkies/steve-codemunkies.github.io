@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Use the connection string"
 description:  "I am a developer. I am one with the connection string, and the connection string will guide me."
 date:           2020-04-19 15:30:00
-categories: connectionstring sqlserver eventstore mongodb
+categories: connectionstring sqlserver eventstore mongodb dotnet
 comments: false
 page-type: article
 hero-image: /assets/2020-04-19-luke.jpg

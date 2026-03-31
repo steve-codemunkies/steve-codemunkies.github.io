@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Share SSH Keys between multiple WSL2 Distributions"
 description:  "Because why stop at one distribution?"
 date:   	2025-01-15 20:30:00
-categories: docker ssh ssh-keys wsl2 keychain
+categories: docker ssh wsl keychain
 comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg

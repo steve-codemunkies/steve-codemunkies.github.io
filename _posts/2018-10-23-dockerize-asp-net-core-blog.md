@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Dockerize an ASP.NET Core Blog"
 description:  "Setting off on the way to exploring some cloud services"
 date:   	2018-10-23 12:00:00
-categories: aspnetcore docker
+categories: dotnet docker
 comments: false
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg

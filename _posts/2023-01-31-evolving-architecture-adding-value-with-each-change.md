@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Evolving Architecture: Adding value with each change"
 description:  "Not just change for changes sake"
 date:   	2023-01-31 22:30:00
-categories: evolving-architecture aws s3 lambda sqs typescript 
+categories: evolving-architecture aws
 comments: false
 page-type: article
 hero-image: /assets/2019-01-07-elite-hacking.jpg

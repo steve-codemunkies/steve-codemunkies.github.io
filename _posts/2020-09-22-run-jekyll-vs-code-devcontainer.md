@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Run Jekyll in a VS Code Dev Container"
 description:  "WSL2, docker, linux, ruby, jekyll, my! my! my!"
 date:   	2020-09-22 20:59:00
-categories: docker wsl wsl2 docker jekyll
+categories: docker wsl docker jekyll
 comments: false
 page-type: article
 hero-image: /assets/2018-12-12-container-ship.jpg

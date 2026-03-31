@@ -3,7 +3,7 @@ layout: 	post
 title:  	"The Pit of Success"
 description:  "Because the Guided Busway to Success isn't as emotive or intriguing, also it's not just for developers!"
 date:   	2018-06-01 14:00:00
-categories: pit success guidance teams
+categories: leadership team
 comments: false
 page-type: article
 hero-image: /assets/2018-06-01-indy-snake-pit.jpg

@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Building an interactive service with .NET Core 2.1"
 description:  "Exploring whats new with .NET Core 2.1 whilst also exploring how to make services a bit friendlier"
 date:   	2018-07-20 09:00:00
-categories: dotnet-core autofac serilog rabbitmq app-metrics ihostedservice http
+categories: dotnet autofac serilog rabbitmq 
 comments: false
 page-type: article
 ---

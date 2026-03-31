@@ -3,7 +3,7 @@ layout: 	post
 title:  	"Enabling Jenkins to build GitHub Enterprise Pull Requests"
 description:  "Taking some of the load out of code reviews"
 date:   	2016-10-13 08:55:00
-categories: github github-enterprise jenkins pull-request
+categories: github jenkins 
 comments: false
 page-type: article
 ---
