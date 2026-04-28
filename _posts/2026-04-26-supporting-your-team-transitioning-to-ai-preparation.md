@@ -6,8 +6,8 @@ date:   	2026-04-26 19:45:00
 categories: ai copilot leadership
 comments: false
 page-type: article
-hero-image: /assets/2019-01-07-elite-hacking.jpg
-tile-image: /assets/2019-01-07-elite-hacking-tile.jpg
+hero-image: /assets/2026-04-28-ai-banner.jpg
+tile-image: /assets/2026-04-28-ai-tile.jpg
 ---
 
 **TL;DR**: When used correctly AI can be a powerful force multiplier at the level of each individual in your team. But thoughtlessly directing your teams could cause more problems and long term damage than you're expecting. In this post I take you through some of the ways that you can prepare yourself and your teams to introduce AI.

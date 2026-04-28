@@ -6,8 +6,8 @@ date:   	2026-03-31 20:00:00
 categories: ai copilot jekyll
 comments: false
 page-type: article
-hero-image: /assets/2019-01-07-elite-hacking.jpg
-tile-image: /assets/2019-01-07-elite-hacking-tile.jpg
+hero-image: /assets/2026-04-28-ai-banner.jpg
+tile-image: /assets/2026-04-28-ai-tile.jpg
 ---
 
 ## TL;DR
